@@ -1,4 +1,4 @@
-const About = () => {
+const AboutPage = () => {
   return (
     <div className="max-w-7xl mx-auto p-3 space-y-4">
       <h1 className="text-2xl font-medium text-amber-500">About</h1>
@@ -28,4 +28,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutPage;

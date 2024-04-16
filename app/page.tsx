@@ -2,7 +2,7 @@ import MoviesList from "@/components/MoviesList";
 
 const API_KEY = process.env.API_KEY;
 
-type HomeProps = {
+type HomePageProps = {
   searchParams: {
     genre?: string;
   };
@@ -24,7 +24,7 @@ const fetchMovies = async (genre: string) => {
   return data.results;
 };
 
-const Home = async ({ searchParams }: HomeProps) => {
+const HomePage = async ({ searchParams }: HomePageProps) => {
   const genre = searchParams.genre || "fetchTrending";
 
   const results = await fetchMovies(genre);
@@ -38,4 +38,4 @@ const Home = async ({ searchParams }: HomeProps) => {
   );
 };
 
-export default Home;
+export default HomePage;
